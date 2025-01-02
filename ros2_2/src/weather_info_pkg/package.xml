@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>weather_info_pkg</name>
+  <version>0.0.0</version>
+  <description>A ROS 2 package for publishing weather information</description>
+  <maintainer email="s23C1033WD@s.chibakoudai.jp">kazu0709</maintainer>
+  <license>BSD-3-Clause</license>
+
+  <!-- 実行時依存関係 -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+  <exec_depend>python3-requests</exec_depend> <!-- HTTPリクエスト用 -->
+  <exec_depend>python3-jsonschema</exec_depend> <!-- JSONデータ処理用 -->
+
+  <!-- 開発・ビルド依存関係 -->
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+
+
+
+  <!--
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_python</buildtool_depend>
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <test_depend>python3-pytest</test_depend>-->
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
+
